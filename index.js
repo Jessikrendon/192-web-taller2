@@ -25,7 +25,6 @@ app.use(express.static(__dirname + '/assets/css'));
 app.use(express.static(__dirname + '/node_modules/popper.js/dist'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 
-
 app.get('/', (request, response) =>{
     console.log('funciona');
     var context = {
