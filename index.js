@@ -20,6 +20,11 @@ app.set('view engine','handlebars')
 app.use (bodyParser.urlencoded({extended: true}))
 app.use (bodyParser.json())
 
+app.use(express.static(__dirname + '/node_modules/jquey/dist'));
+app.use(express.static(__dirname + '/assets/css'));
+app.use(express.static(__dirname + '/node_modules/popper.js/dist'));
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
+
 
 app.get('/', (request, response) =>{
     console.log('funciona');
@@ -33,7 +38,7 @@ app.get('/', (request, response) =>{
 
 
 app.listen (port, function ()  {
-    console.log (`API REST corriendo en http://localhost:${port}`)
+    //console.log (`API REST corriendo en http://localhost:${port}`)
 });
 
 
