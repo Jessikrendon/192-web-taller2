@@ -43,4 +43,4 @@ app.listen (port, function ()  {
 
 //En package.json = Nodemon se pudo instalar de forma global, sin embargo una forma más limpia y elegante es usar los scripts de npm. Entonces hay que escribir lo que viene a continuación:
 // "start":"nodemon index.js",
-//Con esto uno escribe en la terminal "nmp start" y así corre el cod
+//Por eso uno escribe en la terminal "nmp start" y así corre el cod
